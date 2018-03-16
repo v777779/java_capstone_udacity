@@ -1,0 +1,8 @@
+<resources>
+
+
+    <!--screen_match-->
+    <dimen name="icon_sm_recycler_size">20dp</dimen>
+
+
+</resources>

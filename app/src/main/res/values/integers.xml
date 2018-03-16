@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--match-->
+    <integer name="text_sm_item_status_min">7</integer>
+    <!--player-->
+</resources>

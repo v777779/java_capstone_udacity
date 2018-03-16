@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item >
+    <shape android:shape="rectangle"
+        >
+        <!--<solid android:color="@color/image_rm_item_widget_bar_back"/>-->
+        <gradient android:angle="90"
+            android:startColor="@color/image_rm_item_widget_bar_back_light"
+            android:centerColor="@color/image_rm_item_widget_bar_back"
+            android:endColor="@color/image_rm_item_widget_bar_back_dark"
+
+            android:type="linear"/>
+
+        <corners android:radius="@dimen/margin_normal"/>
+
+    </shape>
+</item>
+
+
+</layer-list>

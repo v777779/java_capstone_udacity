@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/match_start_header"
+        style="@style/StartHeader.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/text_sm_item_match_starts_in"
+        android:text="@string/text_sm_item_match_start_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/match_start_date"
+        style="@style/StartDate.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/text_sm_item_match_full_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/match_time_min_low"
+        app:layout_constraintTop_toBottomOf="@+id/match_time_sub_hours"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/text_test_sm_item_match_date_time" />
+
+    <TextView
+        android:id="@+id/match_time_day_middle"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        app:layout_constraintEnd_toStartOf="@+id/match_time_day_low"
+        app:layout_constraintTop_toTopOf="@+id/match_time_day_low"
+        tools:text="@string/text_test_sm_item_match_number_1" />
+
+    <TextView
+        android:id="@+id/match_time_day_high"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/match_time_day_middle"
+        app:layout_constraintTop_toTopOf="@+id/match_time_day_low"
+        tools:text="@string/text_test_sm_item_match_number_1" />
+
+    <TextView
+        android:id="@+id/match_time_day_low"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        android:paddingEnd="@dimen/margin_normal"
+        android:paddingStart="@dimen/margin_normal"
+        app:layout_constraintEnd_toStartOf="@+id/match_time_hour_high"
+        app:layout_constraintTop_toTopOf="@+id/match_time_hour_high"
+        tools:text="@string/text_test_sm_item_match_number_0" />
+
+    <TextView
+        style="@style/Start.Subscript.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        android:text="@string/text_sm_item_match_subscript_days"
+        app:layout_constraintEnd_toEndOf="@+id/match_time_day_low"
+        app:layout_constraintStart_toStartOf="@+id/match_time_day_middle"
+        app:layout_constraintTop_toBottomOf="@+id/match_time_day_middle" />
+
+    <TextView
+        android:id="@+id/match_time_hour_high"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/match_time_back"
+        android:contentDescription="@string/text_sm_item_match_date_hours"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v2a"
+        app:layout_constraintTop_toBottomOf="@+id/match_start_header"
+        tools:text="@string/text_test_sm_item_match_number_1" />
+
+    <TextView
+        android:id="@+id/match_time_hour_low"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/text_sm_item_match_date_hours"
+        app:layout_constraintStart_toEndOf="@+id/match_time_hour_high"
+        app:layout_constraintTop_toBottomOf="@+id/match_start_header"
+        tools:text="@string/text_test_sm_item_match_number_0" />
+
+
+    <TextView
+        android:id="@+id/match_time_sub_hours"
+        style="@style/Start.Subscript.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_date_hours"
+        android:text="@string/text_sm_item_match_subscript_hours"
+        app:layout_constraintEnd_toEndOf="@+id/match_time_hour_low"
+        app:layout_constraintStart_toStartOf="@+id/match_time_hour_high"
+        app:layout_constraintTop_toBottomOf="@+id/match_time_hour_high" />
+
+    <TextView
+        android:id="@+id/match_time_min_high"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/text_sm_item_match_date_mins"
+        app:layout_constraintStart_toEndOf="@+id/match_time_hour_low"
+        app:layout_constraintTop_toTopOf="@+id/match_time_hour_low"
+        tools:text="@string/text_test_sm_item_match_number_1" />
+
+    <TextView
+        android:id="@+id/match_time_min_low"
+        style="@style/Start.Time.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_start_time_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:contentDescription="@string/text_sm_item_match_date_mins"
+        app:layout_constraintStart_toEndOf="@+id/match_time_min_high"
+        app:layout_constraintTop_toTopOf="@+id/match_time_min_high"
+        tools:text="@string/text_test_sm_item_match_number_0" />
+
+    <TextView
+        style="@style/Start.Subscript.Match.TextRecycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_date_mins"
+        android:text="@string/text_sm_item_match_subscript_mins"
+        app:layout_constraintEnd_toEndOf="@+id/match_time_min_low"
+        app:layout_constraintStart_toStartOf="@+id/match_time_min_high"
+        app:layout_constraintTop_toBottomOf="@+id/match_time_min_high" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/match_notification"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="32dp"-->
+    <!--android:src="@drawable/ic_notifications_none"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/match_time_min_low"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/match_time_min_low"-->
+    <!--app:layout_constraintVertical_bias="0.5" />-->
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+</android.support.constraint.ConstraintLayout>
+

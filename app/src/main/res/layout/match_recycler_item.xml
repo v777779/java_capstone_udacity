@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_micro"
+    android:layout_marginEnd="@dimen/margin_small"
+    android:layout_marginStart="@dimen/margin_small"
+    app:cardCornerRadius="@dimen/card_corner_rm_item_radius">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraint_recycler_match_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/match_recycler_card_back_light" >
+
+        <ImageView
+            android:id="@+id/image_sm_team_home"
+            android:layout_width="@dimen/image_rm_item_size"
+            android:layout_height="@dimen/image_rm_item_size"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_rm_item_team_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fc_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/text_sm_item_score"
+            app:layout_constraintEnd_toStartOf="@+id/guide_v4"
+            app:layout_constraintStart_toStartOf="@+id/guide_v4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/image_sm_team_away"
+            android:layout_width="@dimen/image_rm_item_size"
+            android:layout_height="@dimen/image_rm_item_size"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_rm_item_team_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fc_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/text_sm_item_score"
+            app:layout_constraintEnd_toStartOf="@+id/guide_v1"
+            app:layout_constraintStart_toStartOf="@+id/guide_v1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_sm_item_home"
+            style="@style/Team.Item.Recycler.Match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:contentDescription="@string/text_rm_item_team_name"
+            android:text="@string/text_test_rm_item_team_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guide_v5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_sm_team_home"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/text_sm_item_away"
+            style="@style/Team.Item.Recycler.Match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:contentDescription="@string/text_rm_item_team_name"
+            android:text="@string/text_test_rm_item_team_away"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guide_v3"
+            app:layout_constraintStart_toStartOf="@+id/guide_v5"
+            app:layout_constraintTop_toBottomOf="@+id/image_sm_team_away" />
+
+        <TextView
+            android:id="@+id/text_sm_item_score"
+            style="@style/Score.Item.Recycler.Match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/text_sm_item_match_score"
+            android:text="@string/text_test_sm_match_recycler_score"
+            app:layout_constraintEnd_toStartOf="@+id/guide_v1"
+            app:layout_constraintStart_toStartOf="@+id/guide_v4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_sm_item_league"
+            style="@style/League.Item.Recycler.Match"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/text_sm_item_match_league"
+            android:text="@string/text_test_rm_item_league"
+            app:layout_constraintBottom_toTopOf="@+id/text_sm_item_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/image_sm_team_away"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_sm_item_date"
+            style="@style/Date.Item.Recycler.Match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/text_rm_item_match_time"
+            android:text="@string/text_test_sm_match_recycler_date"
+            app:layout_constraintBottom_toTopOf="@+id/text_sm_item_status"
+            app:layout_constraintEnd_toEndOf="@+id/text_sm_item_status"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/text_sm_item_status" />
+
+        <TextView
+            android:id="@+id/text_sm_item_status"
+            style="@style/Status.Team.TextRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="@string/text_sm_item_match_status"
+            android:text="@string/text_test_sm_item_match_scheduled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_sm_item_league" />
+
+        <ImageView
+            android:id="@+id/icon_sm_item_favorite"
+            android:layout_width="@dimen/icon_sm_recycler_size"
+            android:layout_height="@dimen/icon_sm_recycler_size"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp"
+
+            android:contentDescription="@string/image_rm_item_service_icon"
+            android:src="@drawable/ic_star_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guide_v3" />
+
+        <ImageView
+            android:id="@+id/icon_sm_item_notify"
+            android:layout_width="@dimen/icon_sm_recycler_size"
+            android:layout_height="@dimen/icon_sm_recycler_size"
+            android:layout_marginBottom="4dp"
+
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/image_rm_item_service_icon"
+            android:src="@drawable/ic_notifications_none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_sm_item_status" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_v3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_v5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13"
+
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

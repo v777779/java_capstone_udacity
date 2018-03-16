@@ -1,0 +1,387 @@
+<resources>
+    <string name="app_name">Football</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_favorites">FavoritesActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!--titles-->
+    <string name="screen_match">Matches</string>
+    <string name="screen_news">News</string>
+    <string name="screen_favorites">Favorites</string>
+    <string name="screen_settings">Settings</string>
+
+    <!--menu-->
+    <string name="action_calendar">Calendar</string>
+    <string name="action_share">Share</string>
+    <string name="action_reload">Reload</string>
+
+    <!--navigation-->
+    <string name="title_matches">Matches</string>
+    <string name="title_news">News</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_settings">Settings</string>
+
+    <!--preferences-->
+    <!--switch    -->
+    <string name="pref_webview_action_key">pref_webview_action_key</string>
+    <string name="pref_webview_action_off">Default Browser</string>
+    <string name="pref_webview_action_on">Built In Browser</string>
+    <string name="pref_webview_action_title">News Browser</string>
+    <string name="pref_webview_action_default">true</string>
+
+    <!--switch    -->
+    <string name="pref_snackbar_key">pref_snackbar_key</string>
+    <string name="pref_snackbar_off">Toast</string>
+    <string name="pref_snackbar_on">Snackbar</string>
+    <string name="pref_snackbar_title">Messages style</string>
+    <string name="pref_snackbar_default">true</string>
+
+    <!--list-->
+    <string name="pref_data_delay_time_key">pref_data_delay_time_key</string>
+    <string name="pref_data_delay_time_title">Update Matches</string>
+    <string name="pref_data_delay_time_default">480</string>
+    <!--list-->
+    <string name="pref_news_delay_time_key">pref_news_delay_time_key</string>
+    <string name="pref_news_delay_time_title">Update News</string>
+    <string name="pref_news_delay_time_default">30</string>
+    <!--list-->
+    <string name="pref_date_span_key">pref_fixture_dates_span_key</string>
+    <string name="pref_date_span_title">Calendar width</string>
+    <string name="pref_date_span_default">10</string>
+    <string name="pref_date_span_high_message">This will SLOW DOWN application</string>
+
+
+    <string name="pref_delay_time_high">"-1"</string>
+    <string name="pref_delay_time_high_message">Data will NEVER UPDATE</string>
+
+
+    <string-array name="pref_delay_time_titles">
+        <item>Every Start</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>4 hours</item>
+        <item>8 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_delay_time_values">
+        <item>1</item>
+        <item>30</item>
+        <item>60</item>
+        <item>240</item>
+        <item>480</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="pref_date_span_titles">
+        <item>3 days</item>
+        <item>7 days</item>
+        <item>10 days</item>
+        <item>20 days</item>
+        <item>1 month</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="pref_date_span_values">
+        <item>3</item>
+        <item>7</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <!--preference values-->
+    <string name="pref_data_update_time_key">pref_data_update_time_key</string>
+    <string name="pref_data_update_time_default">0</string>
+
+
+    <string name="pref_news_update_time_key">pref_news_update_time_key</string>
+    <string name="pref_news_update_time_default">0</string>
+
+
+    <!--notifications-->
+    <string name="notification_delay_time_min">Match already started or finished</string>
+    <string name="notification_title">Match Reminder</string>
+    <string name="notification_body">%1$s vs %2$s\nDate: %3$s </string>
+    <string name="notification_time">%1$02d/%2$02d/%3$04d %4$02d:%5$02d</string>
+
+
+    <!--retrofit-->
+    <string name="retrofit_response_empty">Retrofit response is empty</string>
+    <string name="retrofit_response_exception">Retrofit response is exception:</string>
+
+    <!--action-->
+    <string name="action_update">ru.vpcb.footballassistant.intent.action.ACTION_UPDATE</string>
+    <string name="action_force_update">ru.vpcb.footballassistant.intent.action.ACTION_FORCE_UPDATE</string>
+
+    <!--extra-->
+    <string name="extra_progress_counter">ru.vpcb.footballassistant.intent.extra.PROGRESS_COUNTER</string>
+
+
+    <!--broadcast-->
+
+    <string name="broadcast_data_update_started">ru.vpcb.footballassistant.intent.action.DATA_UPDATE_STARTED</string>
+    <string name="broadcast_data_update_finished">ru.vpcb.footballassistant.intent.action.DATA_UPDATE_FINISHED</string>
+    <string name="broadcast_data_no_network">ru.vpcb.footballassistant.intent.action.DATA_NO_NETWORK</string>
+    <string name="broadcast_data_update_error">ru.vpcb.footballassistant.intent.action.DATA_UPDATE_ERROR</string>
+    <string name="broadcast_data_update_progress">ru.vpcb.footballassistant.intent.action.DATA_UPDATE_PROGRESS</string>
+
+    <string name="broadcast_news_update_started">ru.vpcb.footballassistant.intent.action.NEWS_UPDATE_STARTED</string>
+    <string name="broadcast_news_update_finished">ru.vpcb.footballassistant.intent.action.NEWS_UPDATE_FINISHED</string>
+    <string name="broadcast_news_no_network">ru.vpcb.footballassistant.intent.action.NEWS_NO_NETWORK</string>
+    <string name="broadcast_news_update_error">ru.vpcb.footballassistant.intent.action.NEWS_UPDATE_ERROR</string>
+    <string name="broadcast_news_update_progress">ru.vpcb.footballassistant.intent.action.NEWS_UPDATE_PROGRESS</string>
+
+    <string name="broadcast_notification_change">ru.vpcb.footballassistant.intent.action.DATA_NOTIFICATION_CHANGE</string>
+
+    <!--main-->
+    <string name="powered_news_api">powered by NewsAPI.org</string>
+    <string name="news_api_link">https://newsapi.org</string>
+
+    <!--match-->
+    <string name="text_sm_item_match_start_header">THE MATCH STARTS IN</string>
+    <string name="text_sm_item_match_subscript_days">days</string>
+    <string name="text_sm_item_match_subscript_hours">hours</string>
+    <string name="text_sm_item_match_subscript_mins">minutes</string>
+
+    <string name="action_share_match_message">Match: %1$s, League: %2$s, Competition: %3$s,
+         Home: %4$s, Away: %5$s, Score( %6$s:%7$s ), Status: %8$s"</string>
+
+    <!--bet-->
+    <string name="text_sm_item_match_letter_w">W</string>
+    <string name="text_sm_item_match_letter_d">D</string>
+    <string name="text_sm_item_match_letter_l">L</string>
+    <string name="text_sm_item_match_betting">FOOTBALL &amp; BETTING</string>
+
+    <string name="text_sm_item_match_bet_sub_win">win</string>
+    <string name="text_sm_item_match_bet_sub_draw">draw</string>
+    <string name="text_sm_item_match_bet_sub_loss">loss</string>
+
+    <!--recycler-->
+    <string name="text_sm_item_meeting">MEETINGS</string>
+
+    <!--player-->
+
+    <!--league-->
+    <!--head-->
+
+    <!--news-->
+    <string name="text_news_item_time_min">%1$dm</string>
+    <string name="text_news_item_time_hour">%1$dh</string>
+    <string name="text_news_item_time_empty">\u2014</string>
+    <string name="text_news_item_separator">|</string>
+    <string name="action_share_news_message">Football Assistant News: %1$s  href:%2$s"</string>
+
+    <!--widget-->
+    <string name="widget_empty_dash">-</string>
+    <string name="widget_empty_long_dash">\u2014</string>
+    <string name="widget_empty_time">- : -</string>
+
+    <string name="widget_head_text">Click to choose match</string>
+    <string name="widget_button">Select and Click on Match to fill widget</string>
+    <string name="widget_button_update">Widget has been updated</string>
+
+
+    <!--other-->
+
+    <!--messages-->
+    <string name="activity_same_message">You are already here</string>
+    <string name="matches_no_data_message">There is no data on this date</string>
+    <string name="matches_share_no_data_message">There is no data on this match</string>
+    <string name="matches_no_network_message">Error network connection</string>
+    <string name="news_no_data_message">There is no news on this link</string>
+
+    <string name="notification_set_message">Notification: %1$s</string>
+    <string name="notification_reset_message">Removed from date: %1$s</string>
+    <string name="notification_reset_error_message">Notification cannot be removed</string>
+    <string name="read_shared_preference_exception">Read shared preference exception</string>
+    <string name="progress_bar_message">"ProgressBar Attention"</string>
+
+
+    <!--exception-->
+    <string name="update_content_error">Update content error: %1$s</string>
+    <string name="get_competitions_teams_null">Get competitions teams null exception: %1$s</string>
+    <string name="load_database">LoadDatabase exception(%1$d,%2$d): %3$s</string>
+    <string name="load_database_news">LoadDatabase exception(%1$d,%2$s): %3$s</string>
+    <string name="write_database">WriteDatabase exception(%1$d,%2$d): %3$s</string>
+    <string name="read_database_exception">ReadDatabase exception: %1$s</string>
+    <string name="favorites_database_exception">Favorites or Notification database exception: %1$s</string>
+    <string name="favorites_change_error">Favorite state not changed!</string>
+    <string name="favorites_database_empty">Favorites list is empty!</string>
+    <string name="unknown_uri">Unknown uri: %1$s"</string>
+    <string name="unknown_loader_id">Unknown id: %1$d"</string>
+
+    <string name="calendar_set_date_exception">Calendar set date exception: %1$s</string>
+
+    <string name="notification_empty_activity_exception">Notification empty activity window exception: %1$s</string>
+
+    <!--widgets-->
+    <string name="widget_read_fixture_exception">Widget read fixture exception:%1$s</string>
+
+    <!--analytics-->
+    <string name="fb_matches_id">Matches</string>
+    <string name="fb_matches">Opened page of matches on date: %1$s</string>
+    <string name="fb_matches_content">Football matches data</string>
+
+    <string name="fb_match_id">Match</string>
+    <string name="fb_match">Opened Match details on match</string>
+
+    <string name="fb_widget_id">Widget</string>
+    <string name="fb_widget">Widget on Match created</string>
+
+    <string name="fb_share_id">Share</string>
+    <string name="fb_action_id">Action</string>
+    <string name="fb_share_match">Share Action Match Info</string>
+    <string name="fb_share_news">Share Action Sport News</string>
+
+
+    <string name="fb_news_page_id">NewsPage</string>
+    <string name="fb_news_page">News Page: %1$s</string>
+
+    <string name="fb_news_item_id">NewsItem</string>
+    <string name="fb_news_item">News item opened</string>
+    <string name="fb_news_content">Football news content</string>
+
+    <!--admob-->
+    <!--banner test-->
+    <string name="banner_ad_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_size">BANNER</string>
+
+    <!--<string name="banner_size">FULL_BANNER</string>-->
+    <!--<string name="banner_size">LEADERBOARD</string>-->
+
+    <!--diagnostic-->
+
+    <!--progress-->
+    <string name="progress_constant">100</string>
+
+    <!--descriptions-->
+
+    <!--appbar-->
+    <!--screen1-->
+    <string name="image_application_logo">Application Logo Image</string>
+    <!--screen2-->
+    <string name="text_application_name">Application Name Text</string>
+
+
+    <!--screen1-->
+    <string name="front_image_application">The Ball front image of application</string>
+    <string name="text_powered_by_news_api_dsc">NewsAPI required link to https://newsapi.org site</string>
+
+    <!--screen2-->
+    <string name="image_rm_item_team_logo">The Football Team Logo image</string>
+    <string name="text_rm_item_team_name">The Football Team Name</string>
+    <string name="image_rm_item_service_icon">The Football Match service icon</string>
+    <string name="text_rm_item_match_time">The Football Match time</string>
+    <string name="text_rm_item_league_name">The Football League Name</string>
+    <string name="image_rm_item_league_logo">The Football League Logo image</string>
+    <string name="text_rm_viewpager_back_dsc">Viewpager Background Image</string>
+    <string name="text_rm_viewpager_toolbar_back_dsc">Viewpager Title Bar Background Image</string>
+
+    <string name="text_rm_widget_button_dsc">Bar with message how to fill widget</string>
+    <string name="admob_banner_dsc">AdMob Banner</string>
+
+    <!--screen4-->
+    <!--match-->
+    <string name="text_sm_item_match_country">The Name of Country</string>
+    <string name="text_sm_item_match_league">The Name of League</string>
+    <string name="text_sm_item_match_score_home">The Score of Home Team</string>
+    <string name="text_sm_item_match_score_away">The Score of Away Team</string>
+    <string name="text_sm_item_match_status">The Match Status</string>
+    <string name="text_sm_item_match_icon_notification">Notification Icon</string>
+    <string name="text_sm_item_match_icon_notification_back">Notification Icon Circle</string>
+    <string name="text_sm_item_match_icon_favorite">Favorites Icon</string>
+    <string name="text_sm_item_match_icon_favorite_back">Favorite Icon Circle</string>
+    <string name="text_sm_item_match_icon_arrow_back_dsc">Arrow Back Icon</string>
+    <string name="text_sm_item_match_icon_share_dsc">Share Action Icon</string>
+
+    <!--start-->
+    <string name="text_sm_item_match_date">The Match Date</string>
+    <string name="text_sm_item_match_time">The Match Time</string>
+    <string name="text_sm_item_match_starts_in">The Match Starts In</string>
+
+    <string name="text_sm_item_match_date_days">The Match Date Days</string>
+    <string name="text_sm_item_match_date_hours">The Match Date Hours</string>
+    <string name="text_sm_item_match_date_mins">The Match Date Minutes</string>
+
+    <string name="text_character_letter">The Letter</string>
+    <string name="text_sm_item_match_full_date">The Match Start Full Date and Time</string>
+    <!--bet-->
+    <string name="text_sm_item_match_bet">The Football and Betting</string>
+    <string name="text_sm_item_match_bet_sub_wins">The Subscript Win</string>
+    <string name="text_sm_item_match_bet_sub_draws">The Subscript Draw</string>
+
+    <!--recycler-->
+    <string name="text_sm_item_prev_meetings">Previous Meetings Header</string>
+    <string name="text_sm_item_match_score">The Score of Match</string>
+
+
+    <!--screen7-->
+    <!--player-->
+
+    <!--screen8-->
+    <!--league-->
+    <!--item-->
+    <!--head-->
+
+    <!--screen 9-->
+    <string name="image_news_item_poster_dsc">The News Poster image</string>
+    <string name="text_news_item_header_dsc">The News Header Text</string>
+    <string name="text_news_item_body_dsc">The News Body Text</string>
+    <string name="text_news_item_source_dsc">The News Source Name</string>
+    <string name="text_news_item_time_dsc">The News Time in Hours Past</string>
+    <string name="text_news_item_separator_dsc">The Separator Character</string>
+
+
+    <!--other-->
+    <!--competition-->
+
+    <!--dialog-->
+
+    <!--calendar-->
+    <string name="calendar_title">Calendar</string>
+    <string name="calendar_text_year">%1$04d</string>
+    <string name="calendar_text_date">%1$s, %2$s %3$02d</string>
+
+
+    <!--test-->
+    <string name="text_test_rm_item_team_home">Eintracht Braunschweig</string>
+    <string name="text_test_rm_item_team_away">Manchester United Junior League FC</string>
+    <string name="text_test_rm_item_match_time">19:05</string>
+    <string name="text_test_rm_item_match_date">20/01/18</string>
+    <string name="text_test_rm_item_league">Premier League 2017/18</string>
+
+
+    <string name="text_test_sm_item_match_country">England</string>
+    <string name="text_test_sm_item_match_number_1">1</string>
+    <string name="text_test_sm_item_match_number_0">0</string>
+
+    <string name="text_test_sm_item_match_number_1_9">1.9</string>
+    <string name="text_test_sm_item_match_number_3_5">3.5</string>
+    <string name="text_test_sm_item_match_number_4_0">4.0</string>
+
+    <string name="text_test_sm_item_match_timed">TIMED</string>
+    <string name="text_test_sm_item_match_scheduled">SCHEDULED</string>
+
+    <string name="text_test_sm_item_match_date">Sat, 20 Jan 2018</string>
+    <string name="text_test_sm_item_match_date_time">20 Jan 2018 19:05</string>
+    <string name="text_test_sm_match_recycler_date">20 Jan 2018</string>
+    <string name="text_test_sm_match_recycler_score">1 : 0</string>
+
+
+    <string name="text_test_recycler_click">Recycler Item Clicked</string>
+
+    <string name="text_test_news_item_head">Scotland fights back to beat France 32&#8211;26</string>
+    <string name="text_test_news_item_body">EDINBURGH, Scotland (AP)  Scotland rebounded from its
+        mauling in Wales by fighting back to beat France 32-26 in Six Nations rugby at
+        Murrayfield, with a string of successful penalty kicks by recalled scrumhalf
+        Greig Laidlaw completing the turnaround on Sunday.</string>
+    <string name="text_test_news_item_time">15 hr ago</string>
+    <string name="text_test_news_item_source">Fox Sports</string>
+
+
+</resources>

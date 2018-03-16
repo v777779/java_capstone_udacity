@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/match_bet_header"
+        style="@style/StartHeader.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/text_sm_item_match_bet"
+        android:text="@string/text_sm_item_match_betting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/match_start_date"-->
+        <!--style="@style/StartDate.Match.TextRecycler"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:contentDescription="@string/text_sm_item_match_full_date"-->
+        <!--android:text="@string/text_test_sm_item_match_date_time"-->
+        <!--android:visibility="visible"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--tools:layout_editor_absoluteY="110dp" />-->
+
+    <TextView
+        android:id="@+id/match_bet_home_back"
+        style="@style/Home.Back.Bet.Match"
+        android:layout_width="@dimen/text_sm_item_bet_back_width"
+        android:layout_height="@dimen/text_sm_item_bet_back_height"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/text_character_letter"
+        android:text="@string/text_sm_item_match_letter_w"
+        app:layout_constraintEnd_toStartOf="@+id/match_bet_draw_back"
+        app:layout_constraintTop_toTopOf="@+id/match_bet_draw_back" />
+
+
+    <TextView
+        android:id="@+id/match_bet_home"
+        style="@style/Bet.Match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        tools:text="@string/text_test_sm_item_match_number_1_9"
+        app:layout_constraintBottom_toBottomOf="@+id/match_bet_home_back"
+        app:layout_constraintEnd_toEndOf="@+id/match_bet_home_back"
+        app:layout_constraintStart_toStartOf="@+id/match_bet_home_back"
+        app:layout_constraintTop_toTopOf="@+id/match_bet_home_back" />
+
+
+    <TextView
+        android:id="@+id/match_bet_draw_back"
+        style="@style/Back.Bet.Match"
+        android:layout_width="@dimen/text_sm_item_bet_back_width"
+        android:layout_height="@dimen/text_sm_item_bet_back_height"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/text_character_letter"
+        android:text="@string/text_sm_item_match_letter_d"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v2b"
+        app:layout_constraintStart_toStartOf="@+id/guide_v2b"
+        app:layout_constraintTop_toBottomOf="@+id/match_bet_header" />
+
+
+    <TextView
+        android:id="@+id/match_bet_draw"
+        style="@style/Bet.Match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        tools:text="@string/text_test_sm_item_match_number_3_5"
+        app:layout_constraintBottom_toBottomOf="@+id/match_bet_draw_back"
+        app:layout_constraintEnd_toEndOf="@+id/match_bet_draw_back"
+        app:layout_constraintStart_toStartOf="@+id/match_bet_draw_back"
+        app:layout_constraintTop_toTopOf="@+id/match_bet_draw_back" />
+
+
+    <TextView
+        android:id="@+id/match_bet_away_back"
+        style="@style/Away.Back.Bet.Match"
+        android:layout_width="@dimen/text_sm_item_bet_back_width"
+        android:layout_height="@dimen/text_sm_item_bet_back_height"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/text_character_letter"
+        android:text="@string/text_sm_item_match_letter_l"
+        app:layout_constraintStart_toEndOf="@+id/match_bet_draw_back"
+        app:layout_constraintTop_toTopOf="@+id/match_bet_draw_back" />
+
+    <TextView
+        android:id="@+id/match_bet_away"
+        style="@style/Bet.Match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_date_days"
+        tools:text="@string/text_test_sm_item_match_number_4_0"
+        app:layout_constraintBottom_toBottomOf="@+id/match_bet_away_back"
+        app:layout_constraintEnd_toEndOf="@+id/match_bet_away_back"
+        app:layout_constraintStart_toStartOf="@+id/match_bet_away_back"
+        app:layout_constraintTop_toTopOf="@+id/match_bet_away_back" />
+
+    <TextView
+        style="@style/Start.Subscript.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_bet_sub_wins"
+        android:text="@string/text_sm_item_match_bet_sub_win"
+        app:layout_constraintEnd_toEndOf="@+id/match_bet_home_back"
+        app:layout_constraintStart_toStartOf="@+id/match_bet_home_back"
+        app:layout_constraintTop_toBottomOf="@+id/match_bet_home_back" />
+
+    <TextView
+        style="@style/Start.Subscript.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_bet_sub_draws"
+        android:text="@string/text_sm_item_match_bet_sub_draw"
+        app:layout_constraintEnd_toEndOf="@+id/match_bet_draw_back"
+        app:layout_constraintStart_toStartOf="@+id/match_bet_draw_back"
+        app:layout_constraintTop_toBottomOf="@+id/match_bet_draw_back" />
+
+    <TextView
+        style="@style/Start.Subscript.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/text_sm_item_match_bet_sub_loss"
+        android:text="@string/text_sm_item_match_bet_sub_loss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/match_bet_away_back"
+        app:layout_constraintStart_toStartOf="@+id/match_bet_away_back"
+        app:layout_constraintTop_toBottomOf="@+id/match_bet_away_back" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+</android.support.constraint.ConstraintLayout>
+

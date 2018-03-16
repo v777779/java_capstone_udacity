@@ -1,0 +1,128 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--appbar-->
+    <dimen name="status_bar_height">0dp</dimen>
+    <dimen name="toolbar_top_margin">6dp</dimen>
+    <dimen name="toolbar_bottom_margin">6dp</dimen>
+
+    <!--progress-->
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_text_size">16sp</dimen>
+    <!--main-->
+    <dimen name="text_newsapi_size">12sp</dimen>
+
+    <!--recycler_match-->
+    <dimen name="image_rm_item_appbar_size">22sp</dimen>
+    <dimen name="image_rm_item_size">32dp</dimen>
+    <dimen name="text_rm_item_date_size">12sp</dimen>
+    <dimen name="text_rm_item_team_size">12sp</dimen>
+    <dimen name="text_rm_item_status_size">10sp</dimen>
+    <dimen name="text_rm_item_time_size">24sp</dimen>
+    <dimen name="icon_rm_item_size">24dp</dimen>
+    <dimen name="text_rm_head_size">18sp</dimen>
+    <dimen name="image_rm_head_icon_size">24dp</dimen>
+    <dimen name="card_corner_rm_item_radius">4dp</dimen>
+
+    <!--screen_match-->
+    <dimen name="image_sm_item_size">40dp</dimen>
+    <dimen name="text_sm_item_size">14sp</dimen>
+    <dimen name="text_sm_item_time_size">36sp</dimen>
+    <dimen name="text_sm_item_date_size">14sp</dimen>
+    <dimen name="text_sm_item_country_size">14sp</dimen>
+    <dimen name="text_sm_item_league_size">18sp</dimen>
+    <dimen name="image_sm_head_icon_size">24dp</dimen>
+    <dimen name="text_sm_item_score_back">36dp</dimen>
+    <dimen name="text_sm_item_score_size">20sp</dimen>
+    <dimen name="text_sm_item_status_size">14sp</dimen>
+
+    <dimen name="image_sm_item_icon_back">56dp</dimen>
+    <dimen name="image_sm_item_icon_inner">20dp</dimen>
+    <dimen name="image_sm_item_icon_thickness">1dp</dimen>
+
+    <dimen name="text_rm_item_widget_bar_size">16sp</dimen>
+    <dimen name="match_padding_bottom">200dp</dimen>
+
+    <!--start-->
+    <dimen name="text_sm_item_start_header_size">14sp</dimen>
+    <dimen name="text_sm_item_start_date_size">14sp</dimen>
+    <dimen name="text_sm_item_start_time_size">28sp</dimen>
+    <dimen name="text_sm_item_start_time_width">36dp</dimen>
+    <dimen name="text_sm_item_start_subscript_size">14sp</dimen>
+    <!--bet-->
+    <dimen name="text_sm_item_bet_back">28sp</dimen>
+    <dimen name="text_sm_item_bet_size">28sp</dimen>
+    <dimen name="text_sm_item_bet_back_width">64dp</dimen>
+    <dimen name="text_sm_item_bet_back_height">40dp</dimen>
+    <!--recycler-->
+    <dimen name="text_sm_recycler_score_size">16sp</dimen>
+    <dimen name="text_sm_recycler_league_size">14sp</dimen>
+    <dimen name="text_sm_recycler_date_size">10sp</dimen>
+    <dimen name="text_sm_recycler_team_size">10sp</dimen>
+    <dimen name="icon_sm_recycler_size">24dp</dimen>
+
+
+    <!--screen team-->
+    <dimen name="text_tm_item_status_size">10sp</dimen>
+
+
+    <!--player-->
+
+    <!--league-->
+    <!--toolbar-->
+
+    <!--news-->
+    <dimen name="image_news_item_size">160dp</dimen>
+    <dimen name="text_news_item_size">14sp</dimen>
+    <dimen name="text_news_item_head_size">12sp</dimen>
+    <dimen name="text_news_item_body_size">12sp</dimen>
+    <dimen name="text_news_item_source_size">10sp</dimen>
+    <dimen name="text_news_item_time_size">10sp</dimen>
+    <dimen name="text_news_item_appbar_size">16sp</dimen>
+
+    <!--widgets-->
+    <dimen name="widget_height">110dp</dimen>
+    <dimen name="widget_width">160dp</dimen>
+    <dimen name="widget_resize_height">40dp</dimen>
+    <dimen name="widget_resize_width">160dp</dimen>
+
+    <!--screen_match-->
+    <dimen name="widget_text_size">10sp</dimen>
+    <dimen name="widget_image_team_size">32dp</dimen>
+    <dimen name="widget_text_time_size">32sp</dimen>
+    <dimen name="widget_text_league_size">14sp</dimen>
+    <dimen name="widget_image_score_size">32dp</dimen>
+    <dimen name="widget_text_score_size">16sp</dimen>
+    <dimen name="widget_button_size">36dp</dimen>
+    <dimen name="widget_icon_size">24dp</dimen>
+
+<!--admob-->
+    <dimen name="admob_height">100dp</dimen>
+
+
+
+
+    <!--margins-->
+    <dimen name="margin_micro">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_icon_size">24dp</dimen>
+    <dimen name="margin_extra">64dp</dimen>
+
+    <!--sliding tabs-->
+    <dimen name="sliding_tabs_text_size">12sp</dimen>
+    <dimen name="sliding_tabs_slider">2dp</dimen>
+    <dimen name="sliding_tabs_height">28dp</dimen>
+    <dimen name="sliding_tabs_start">60dp</dimen>
+
+    <!--text-->
+    <dimen name="head_text_size">16sp</dimen>
+
+    <!--calendar-->
+    <dimen name="calendar_head_large_text_size">22sp</dimen>
+
+
+</resources>

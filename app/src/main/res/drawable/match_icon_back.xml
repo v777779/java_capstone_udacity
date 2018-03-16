@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:innerRadius="@dimen/image_sm_item_icon_inner"
+    android:thickness="@dimen/image_sm_item_icon_thickness"
+    android:useLevel="false" >
+    <solid android:color="@color/match_icon_back"/>
+</shape>
+
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:shape="oval"   >-->
+<!--<stroke-->
+    <!--android:width="2dp"-->
+    <!--android:color="@color/match_icon_back">-->
+<!--</stroke>-->
+<!--</shape>-->

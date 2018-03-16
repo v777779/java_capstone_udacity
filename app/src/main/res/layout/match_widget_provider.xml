@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_back"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/margin_small"
+    android:paddingStart="@dimen/margin_small">
+
+
+    <TextView
+        android:id="@+id/text_sm_item_league"
+        style="@style/League.Match.Widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:contentDescription="@string/text_sm_item_match_league"
+        android:text="@string/widget_head_text" />
+    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_large"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_micro"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_sm_team_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_image_team_size"
+                android:layout_gravity="center"
+
+                android:contentDescription="@string/image_rm_item_team_logo"
+                android:src="@drawable/fc_logo_widget_home" />
+
+            <TextView
+                android:id="@+id/text_sm_team_home"
+                style="@style/Team.Match.Widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:contentDescription="@string/text_rm_item_team_name"
+                android:text="@string/widget_empty_long_dash" />
+
+
+            <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/match_favorite"
+                    android:layout_width="@dimen/widget_icon_size"
+                    android:layout_height="@dimen/widget_icon_size"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/text_sm_item_match_icon_favorite"
+                    android:src="@drawable/ic_star_border_white"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/margin_normal"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/match_notification"
+                    android:layout_width="@dimen/widget_icon_size"
+                    android:layout_height="@dimen/widget_icon_size"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/text_sm_item_match_icon_favorite"
+                    android:src="@drawable/ic_notifications_none_white"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/margin_normal"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:layout_weight="1.35"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_sm_item_time"
+                style="@style/Time.Match.Widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:contentDescription="@string/text_sm_item_match_time"
+                android:text="@string/widget_empty_time" />
+
+            <TextView
+                android:id="@+id/text_sm_item_date"
+                style="@style/Match.Light.Widget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/text_sm_item_match_date"
+                android:text="@string/widget_empty_long_dash" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_sm_item_score_home"
+                    style="@style/Score.Match.Widget"
+                    android:layout_width="@dimen/widget_image_score_size"
+                    android:layout_height="@dimen/widget_image_score_size"
+                    android:layout_marginEnd="@dimen/margin_micro"
+                    android:background="@drawable/match_score_red"
+                    android:contentDescription="@string/text_sm_item_match_score_home"
+                    android:text="@string/widget_empty_dash" />
+
+                <TextView
+                    android:id="@+id/text_sm_item_score_away"
+                    style="@style/Score.Match.Widget"
+                    android:layout_width="@dimen/widget_image_score_size"
+                    android:layout_height="@dimen/widget_image_score_size"
+                    android:layout_marginStart="@dimen/margin_micro"
+                    android:background="@drawable/match_score_blue"
+                    android:contentDescription="@string/text_sm_item_match_score_away"
+                    android:text="@string/widget_empty_dash" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_sm_item_status"
+                style="@style/Match.Light.Widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/match_status_back"
+                android:contentDescription="@string/text_sm_item_match_status"
+                android:minEms="@integer/text_sm_item_status_min"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:text="@string/widget_empty_long_dash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_micro"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_sm_team_away"
+                android:layout_width="@dimen/widget_image_team_size"
+                android:layout_height="@dimen/widget_image_team_size"
+                android:layout_gravity="center"
+
+                android:contentDescription="@string/image_rm_item_team_logo"
+                android:src="@drawable/fc_logo_widget_away" />
+
+
+            <TextView
+                android:id="@+id/text_sm_team_away"
+                style="@style/Team.Match.Widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small"
+                android:contentDescription="@string/text_rm_item_team_name"
+                android:text="@string/widget_empty_long_dash" />
+
+
+            <ImageView
+                android:id="@+id/match_refresh"
+                android:layout_width="@dimen/widget_button_size"
+                android:layout_height="@dimen/widget_button_size"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small"
+                android:clickable="true"
+                android:contentDescription="@string/text_sm_item_match_icon_notification"
+                android:focusable="true"
+                android:src="@drawable/ic_refresh_white" />
+            <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

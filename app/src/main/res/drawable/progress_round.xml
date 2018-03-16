@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:innerRadiusRatio="2.5"
+                android:shape="ring"
+                android:thicknessRatio="15"
+                android:useLevel="true">
+                <gradient
+                    android:angle="270"
+                    android:centerColor="@color/progress_primary_center"
+                    android:centerY="0.75"
+                    android:endColor="@color/progress_primary_end"
+                    android:startColor="@color/progress_primary_start" />
+            </shape>
+        </rotate>
+    </item>
+
+
+</layer-list>

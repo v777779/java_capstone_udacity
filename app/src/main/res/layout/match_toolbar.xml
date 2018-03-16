@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--background solid--><!--android:backgroundTint=""/> = null-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_recycler_match_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingEnd="@dimen/margin_normal"
+    android:paddingStart="@dimen/margin_normal">
+
+
+    <ImageView
+        android:id="@+id/image_sm_team_home"
+        android:layout_width="@dimen/image_sm_item_size"
+        android:layout_height="@dimen/image_sm_item_size"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:contentDescription="@string/image_rm_item_team_logo"
+        android:src="@drawable/fc_logo_widget_home"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/text_sm_item_time"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v4c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v4c"
+        app:layout_constraintTop_toTopOf="@+id/text_sm_item_time" />
+
+    <ImageView
+        android:id="@+id/image_sm_team_away"
+        android:layout_width="@dimen/image_sm_item_size"
+        android:layout_height="@dimen/image_sm_item_size"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:contentDescription="@string/image_rm_item_team_logo"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/fc_logo_widget_away"
+        app:layout_constraintBottom_toBottomOf="@+id/text_sm_item_time"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v5c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v5c"
+        app:layout_constraintTop_toTopOf="@+id/text_sm_item_time" />
+
+    <TextView
+        android:id="@+id/text_sm_item_country"
+        style="@style/Country.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_icon_size"
+        android:contentDescription="@string/text_sm_item_match_country"
+        tools:text="@string/text_test_sm_item_match_country"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v1c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_sm_item_league"
+        style="@style/League.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_league"
+        tools:text="@string/text_test_rm_item_league"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v1c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toBottomOf="@+id/text_sm_item_country" />
+
+
+
+    <TextView
+        android:id="@+id/text_sm_item_time"
+        style="@style/Time.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_time"
+        android:text="@string/text_test_rm_item_match_time"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v1c"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toBottomOf="@+id/text_sm_item_league" />
+
+    <TextView
+        android:id="@+id/text_sm_team_home"
+        style="@style/TeamHome.Match.TextRecycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:contentDescription="@string/text_rm_item_team_name"
+        tools:text="@string/text_test_rm_item_team_home"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v6c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_sm_team_home" />
+
+    <TextView
+        android:id="@+id/text_sm_team_away"
+        style="@style/TeamAway.Match.TextRecycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:contentDescription="@string/text_rm_item_team_name"
+        tools:text="@string/text_test_rm_item_team_away"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guide_v7c"
+        app:layout_constraintTop_toBottomOf="@+id/image_sm_team_away" />
+
+    <TextView
+        android:id="@+id/text_sm_item_date"
+        style="@style/Date.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_sm_item_match_date"
+        tools:text="@string/text_test_sm_item_match_date"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v1c"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toBottomOf="@+id/text_sm_item_time" />
+
+
+    <TextView
+        android:id="@+id/text_sm_item_score_home"
+        style="@style/Score.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_score_back"
+        android:layout_height="@dimen/text_sm_item_score_back"
+        android:layout_marginEnd="@dimen/margin_micro"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/match_score_red"
+        android:contentDescription="@string/text_sm_item_match_score_home"
+        tools:text="@string/text_test_sm_item_match_number_1"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toBottomOf="@+id/text_sm_item_date" />
+
+    <TextView
+        android:id="@+id/text_sm_item_score_away"
+        style="@style/Score.Match.TextRecycler"
+        android:layout_width="@dimen/text_sm_item_score_back"
+        android:layout_height="@dimen/text_sm_item_score_back"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/match_score_blue"
+        android:contentDescription="@string/text_sm_item_match_score_away"
+        tools:text="@string/text_test_sm_item_match_number_0"
+        app:layout_constraintStart_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toBottomOf="@+id/text_sm_item_date" />
+
+    <TextView
+        android:id="@+id/text_sm_item_status"
+        style="@style/Status.Match.TextRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/match_status_back"
+        android:contentDescription="@string/text_sm_item_match_status"
+        android:minEms="@integer/text_sm_item_status_min"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:text="@string/text_test_sm_item_match_timed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v1c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v1c"
+        app:layout_constraintTop_toBottomOf="@+id/text_sm_item_score_home" />
+
+    <ImageView
+        android:id="@+id/match_notification"
+        android:layout_width="@dimen/image_sm_head_icon_size"
+        android:layout_height="@dimen/image_sm_head_icon_size"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_notifications_none_white"
+        android:contentDescription="@string/text_sm_item_match_icon_notification"
+        app:layout_constraintBottom_toBottomOf="@+id/text_sm_item_status"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v5c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v5c"
+        app:layout_constraintTop_toTopOf="@+id/text_sm_item_status" />
+
+    <ImageView
+        android:id="@+id/match_notification_back"
+        android:layout_width="@dimen/image_sm_item_icon_back"
+        android:layout_height="@dimen/image_sm_item_icon_back"
+        android:contentDescription="@string/text_sm_item_match_icon_notification_back"
+        android:src="@drawable/match_icon_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/match_notification"
+        app:layout_constraintEnd_toEndOf="@+id/match_notification"
+        app:layout_constraintStart_toStartOf="@+id/match_notification"
+        app:layout_constraintTop_toTopOf="@+id/match_notification" />
+
+
+    <ImageView
+        android:id="@+id/match_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_star_border_white"
+        android:contentDescription="@string/text_sm_item_match_icon_favorite"
+        app:layout_constraintBottom_toBottomOf="@+id/text_sm_item_status"
+        app:layout_constraintEnd_toStartOf="@+id/guide_v4c"
+        app:layout_constraintStart_toStartOf="@+id/guide_v4c"
+        app:layout_constraintTop_toTopOf="@+id/text_sm_item_status" />
+
+    <ImageView
+        android:id="@+id/match_favorite_back"
+        android:layout_width="@dimen/image_sm_item_icon_back"
+        android:layout_height="@dimen/image_sm_item_icon_back"
+        android:contentDescription="@string/text_sm_item_match_icon_favorite_back"
+        android:src="@drawable/match_icon_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/match_favorite"
+        app:layout_constraintEnd_toEndOf="@+id/match_favorite"
+        app:layout_constraintStart_toStartOf="@+id/match_favorite"
+        app:layout_constraintTop_toTopOf="@+id/match_favorite" />
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v1c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v5c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v4c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"
+
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v6c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30"
+
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_v7c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"
+
+        />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@string/pref_webview_action_default"
+        android:key="@string/pref_webview_action_key"
+        android:summaryOn="@string/pref_webview_action_on"
+        android:summaryOff="@string/pref_webview_action_off"
+        android:title="@string/pref_webview_action_title" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="@string/pref_snackbar_default"
+        android:key="@string/pref_snackbar_key"
+        android:summaryOn="@string/pref_snackbar_on"
+        android:summaryOff="@string/pref_snackbar_off"
+        android:title="@string/pref_snackbar_title" />
+
+
+    <ListPreference
+        android:defaultValue="@string/pref_news_delay_time_default"
+        android:entries="@array/pref_delay_time_titles"
+        android:entryValues="@array/pref_delay_time_values"
+        android:key="@string/pref_news_delay_time_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_news_delay_time_title" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to      dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="@string/pref_data_delay_time_default"
+        android:entries="@array/pref_delay_time_titles"
+        android:entryValues="@array/pref_delay_time_values"
+        android:key="@string/pref_data_delay_time_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_data_delay_time_title" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_date_span_default"
+        android:entries="@array/pref_date_span_titles"
+        android:entryValues="@array/pref_date_span_values"
+        android:key="@string/pref_date_span_key"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_date_span_title" />
+
+</android.support.v7.preference.PreferenceScreen>

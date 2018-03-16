@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "490801635402",
+    "firebase_url": "https://footballassistant-d51c0.firebaseio.com",
+    "project_id": "footballassistant-d51c0",
+    "storage_bucket": "footballassistant-d51c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490801635402:android:dd3449a3346954f7",
+        "android_client_info": {
+          "package_name": "ru.vpcb.footballassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490801635402-il3piv199o35qsaug05m8dq3o1q5u1t3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEajrI2LRwoGdroC_2OUVx4qEx7vzcVL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
