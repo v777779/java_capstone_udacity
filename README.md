@@ -1,2 +1,2 @@
-# Capstone Stage2
-Udacity Android Nanodegree Capstone Project Stage 2
+# Androind Developer Nanodegree Program Capstone
+Android Developer Nanodegree Program Capstone Project, Udacity, 2018
